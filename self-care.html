@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self-Care🧘‍♀️</title>
+    <style>
+      body {
+        background: linear-gradient(#e3ecf3, #7a9eb1);
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 800;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-family: 13px;
+        margin: 20px 0 10px;
+      }
+
+      button {
+        display: inline;
+        margin: 0;
+        background: #7a9eb1;
+        color: green;
+        font-size: 20px;
+        padding: 20px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        cursor: pointer;
+        color: #7a9eb1;
+        background: green;
+      }
+      .content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        text-align: center;
+      }
+      .learn-more {
+        display: block;
+        margin: 0 auto 20 auto;
+        text-decoration: none;
+        color: green;
+        font-size: 13px;
+        border: 1px solid #e3ecf3;
+        border-radius: 4px;
+        padding: 15px 30px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        font-size: small;
+        font-weight: lighter;
+      }
+      .emphasis {
+        font-weight: bold;
+      }
+      hr.style-two {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0.75),
+          rgba(0, 0, 0, 0)
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Prioritize Your Self-Care</h1>
+      <hr class="style-two" />
+      <img
+        src="https://www.unh.edu/healthyunh/sites/default/files/styles/article/public/blog-post/blog_4.jpg?itok=DpC6O7pq"
+        alt="self-care quote"
+      />
+      <hr class="style-two" />
+      <h2><em>How you can take better care of yourself</em></h2>
+      <p>
+        Daily stress, high anxiety, inability to unwind, and loneliness can lead
+        to you feeling overwhelmed. Experiencing these kinds of feelings
+        long-term can negatively affect your health. Taking steps to care for
+        your physical and emotional health, are essential to living a more
+        fulfilling and healthy life. We have to be intentional, and patient, in
+        how we care and treat ourselves.
+        <span class="emphasis">
+          It is crucial that we prioritize self-care, which will in turn boost
+          our peace and happiness.
+        </span>
+      </p>
+      <a
+        href="https://www.everydayhealth.com/self-care/"
+        target="_blank"
+        class="learn-more"
+      >
+        <strong>Learn more on Everyday Health</strong>
+      </a>
+      <br />
+      <button>Care Now</button>
+      <p class="footer">This was built by Ebene` Anderson</p>
+    </div>
+    <script>
+      function greetUser() {
+        let name = prompt("What is your name?");
+        let check = prompt("Do you engage in self-care activities?");
+        if (check === "yes") {
+          alert("Yay, keep up the good work!👌");
+        } else {
+          alert(
+            "Taking care of yourself can include things like going for a walk or taking a bubble bath. Make time to care for yourself😉"
+          );
+        }
+        alert(
+          "Thanks, " + name + "! Remember: destress & treat yourself kindly!❤"
+        );
+      }
+      let careNowButton = document.querySelector("button");
+      careNowButton.addEventListener("click", greetUser);
+    </script>
+  </body>
+</html>
